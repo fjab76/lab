@@ -17,8 +17,8 @@ public class NoVisibility {
 	
 	private class ReaderThread extends Thread {
 		public void run() {
-			while (!ready)
-				Thread.yield();
+			while (!ready);
+				//Thread.yield();
 			if(number!=42){
 				throw new RuntimeException();
 			}
