@@ -2,16 +2,12 @@ package fjab;
 
 public class OuterClass {
 
-	public static void main(String[] args){
-		InnerClass innerClass = new OuterClass().new InnerClass();
-		innerClass.run();
-	}
+	private int outerVariable;
 	
 	private class InnerClass{
 		
-		void run(){
-			System.out.println("hello from inner class");
-		}
+		private int innerVariable = outerVariable + 1;
+		
 	}
 	
 	public static class NestedStaticClass{
