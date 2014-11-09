@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Premain-Class: fjab.javaagent.MyJavaAgent
+Created-By: 1.7.0_25 (Oracle Corporation)
+
